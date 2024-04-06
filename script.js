@@ -5,12 +5,12 @@ menu_list_icon.onclick = function () {
   menu_list.classList.toggle("openandclose");
 
   if (menu_list.classList.contains("openandclose")) {
-    menu_list_icon.src = "../assets/shared/icon-close.svg";
+    menu_list_icon.src = "assets/shared/icon-close.svg";
     if (!menu_list.classList.contains("home")) {
       menu_list_icon.src = "../../assets/shared/icon-close.svg";
     }
   } else {
-    menu_list_icon.src = "../assets/shared/icon-hamburger.svg";
+    menu_list_icon.src = "assets/shared/icon-hamburger.svg";
     if (!menu_list.classList.contains("home")) {
       menu_list_icon.src = "../../assets/shared/icon-hamburger.svg";
     }
