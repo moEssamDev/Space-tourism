@@ -1,0 +1,129 @@
+main {
+    width: 100%;
+    min-height: 110vh;
+    background: url("../assets/crew/background-crew-desktop.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.page-transition-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.content .info h3 {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    color: #dddddda2;
+}
+.content .info h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 20px 0px 35px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+} 
+.content .info .pagination {
+    margin-top: 100px;
+}
+.content .info .pagination span {
+    display: inline-flex;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background: white;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.content .info .pagination span.active {
+    opacity: 1;
+    width: 35px;
+    height: 10px;
+    border-radius: 8px;
+}
+.content .info .pagination span:hover {
+    transform: scale(1.5);
+}
+.content .info .pagination span.active:hover {
+    transform: scale(1);
+}
+.content .info .pagination span a {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 1300px) {
+    main {
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 950px) {
+    .content .info p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .content .info h1 {
+        font-size: 35px;
+        margin: 15px 0px 25px;
+    }
+    .content .info h3 {
+        font-size: 25px;
+    }
+    .content .info .pagination {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 950px) {
+    .container {
+        gap: 100px;
+    }
+    .container .info {
+        order: 2;
+    }
+    .content .info .pagination {
+        margin-top: 60px;
+    }
+    .content .info p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .crew_member img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        gap: 70px;
+    }
+}
+
+@media (max-width: 350px) {
+    .content .info h3 {
+        font-size: 20px;
+    }
+    .content .info h1 {
+        font-size: 40px;
+    }
+    .content .info p {
+        font-size: 13px;
+    }
+}

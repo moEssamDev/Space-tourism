@@ -1,0 +1,119 @@
+main {
+    width: 100%;
+    min-height: 100vh;
+    background: url("../assets/home/background-home-desktop.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    margin-top: 15%;
+}
+header nav ul li a {
+    color: white;
+    opacity: .8;
+}
+
+
+.content .info h3 {
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ddddddbd;
+}
+.content .info h1 {
+    color: white;
+    font-size: 170px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+
+.content .brand {
+    width: 300px;
+    height: 300px;
+    background: white;
+    border-radius: 50%;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 300px;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(4, 4, 59);
+    transition: all 0.6s;
+}
+.content .brand:hover {
+    transform: scale(1.1) rotate(360deg);
+}
+
+@media (max-width: 1150px) {
+    .content .brand:hover {
+        transform: rotate(0);
+    }
+}
+
+@media (max-width: 950px) {
+    main {
+        min-width: 100%;
+        background: url("../assets/home/background-home-tablet.jpg") no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+} 
+
+@media (max-width: 600px) {
+    .content .info h3 {
+        font-size: 25px;
+    }
+    .content .info h1 {
+        font-size: 125px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .content .brand {
+        width: 280px;
+        height: 280px;
+        line-height: 280px;
+    }
+}
+@media (max-width: 500px) {
+    .content .info h3 {
+        font-size: 20px;
+        word-spacing: 5px;
+    }
+    .content .info h1 {
+        font-size: 110px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        gap: 100px;
+    }
+    .content .info h3 {
+        font-size: 16px;
+        word-spacing: 5px;
+    }
+    .content .info h1 {
+        font-size: 90px;
+    }
+}
+
+@media (max-width: 300px) {
+    .content .info h3 {
+        font-size: 14px;
+    }
+    .content .info h1 {
+        font-size: 70px;
+    }
+    .content .info p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .content .brand {
+        width: 230px;
+        height: 230px;
+        line-height: 230px;
+    }
+}
