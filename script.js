@@ -6,12 +6,14 @@ menu_list_icon.onclick = function () {
 
   if (menu_list.classList.contains("openandclose")) {
     menu_list_icon.src = "../assets/shared/icon-close.svg";
-    if (!menu_list.classList.contains("home"))
+    if (!menu_list.classList.contains("home")) {
       menu_list_icon.src = "../../assets/shared/icon-close.svg";
+    }
   } else {
     menu_list_icon.src = "../assets/shared/icon-hamburger.svg";
-    if (!menu_list.classList.contains("home"))
+    if (!menu_list.classList.contains("home")) {
       menu_list_icon.src = "../../assets/shared/icon-hamburger.svg";
+    }
   }
 };
 
