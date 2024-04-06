@@ -17,6 +17,12 @@ menu_list_icon.onclick = function () {
   }
 };
 
+if (menu_list.classList.contains("openandclose")) {
+  if (menu_list_icon.classList.contains("home")) {
+    menu_list_icon.src = "assets/shared/icon-close.svg";
+  }
+}
+
 // pages's transport transition
 document.querySelectorAll(".transition-link").forEach((link) => {
   link.addEventListener("click", (e) => {
